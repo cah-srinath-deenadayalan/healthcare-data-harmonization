@@ -25,7 +25,7 @@ function generate_grammar() {
 
   if [ ! -f "$ANTLR_PATH" ]; then
     echo "Downloading ANTLR 4.7.1 to $ANTLR_PATH"
-    curl -o "$ANTLR_PATH" https://www.antlr.org/download/antlr-4.7.1-complete.jar
+    curl -o "$ANTLR_PATH" https://github.com/cah-srinath-deenadayalan/healthcare-data-harmonization/raw/master/antlr-4.7.1-complete.jar
   fi
 
   java \
