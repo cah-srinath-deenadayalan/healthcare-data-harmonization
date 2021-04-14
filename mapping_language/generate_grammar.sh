@@ -27,7 +27,7 @@ function generate_grammar() {
 
   if [ ! -f "$ANTLR_PATH" ]; then
     echo "Downloading ANTLR 4.7.1 to $ANTLR_PATH"
-    wget -p "$ANTLR_PATH" https://storage.cloud.google.com/moms_np/antlr-4.7.1-complete.jar
+    curl -o "$ANTLR_PATH" https://storage.cloud.google.com/moms_np/antlr-4.7.1-complete.jar
   fi
 
   java \
