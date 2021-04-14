@@ -20,6 +20,8 @@ ANTLR_JAR=${ANTLR_JAR:-"antlr.jar"}
 ANTLR_DEFAULT_PATH="$ANTLR_DIR/$ANTLR_JAR"
 ANTLR_PATH=${ANTLR_PATH:-$ANTLR_DEFAULT_PATH}
 
+echo $ANTLR_PATH
+
 function generate_grammar() {
   mkdir -p $ANTLR_DIR
 
